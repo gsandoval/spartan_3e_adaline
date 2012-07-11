@@ -1,0 +1,42 @@
+
+NET "mclock" LOC = "C9";
+NET "reset" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN;
+
+# ==== 6-pin header J1 ====
+# These four connections are shared with the FX2 connector
+NET "j1<0>" LOC = "B4" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "j1<1>" LOC = "A4" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "j1<2>" LOC = "D5" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "j1<3>" LOC = "C5" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+
+# ==== 6-pin header J2 ====
+# These four connections are shared with the FX2 connector
+NET "j2<0>" LOC = "A6" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "j2<1>" LOC = "B6" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "j2<2>" LOC = "E7" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "j2<3>" LOC = "F7" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+
+NET "leds<0>" LOC = F12;
+NET "leds<1>" LOC = E12;
+NET "leds<2>" LOC = E11;
+NET "leds<3>" LOC = F11;
+NET "leds<4>" LOC = C11;
+NET "leds<5>" LOC = D11;
+NET "leds<6>" LOC = E9;
+NET "leds<7>" LOC = F9;
+
+NET "vga_hsync" LOC = F15 |IOSTANDARD = LVTTL |DRIVE = 8 |SLEW = FAST;
+NET "vga_vsync" LOC = F14 |IOSTANDARD = LVTTL |DRIVE = 8 |SLEW = FAST;
+NET "vga_rgb<0>" LOC = H14 |IOSTANDARD = LVTTL |DRIVE = 8 |SLEW = FAST;
+NET "vga_rgb<1>" LOC = H15 |IOSTANDARD = LVTTL |DRIVE = 8 |SLEW = FAST;
+NET "vga_rgb<2>" LOC = G15 |IOSTANDARD = LVTTL |DRIVE = 8 |SLEW = FAST;
+
+NET "lcd_enabled" LOC = M18 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_rw" LOC = L17 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_rs" LOC = L18 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_strataflash_disable" LOC = D16 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_db<0>" LOC = R15 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_db<1>" LOC = R16 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_db<2>" LOC = P17 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+NET "lcd_db<3>" LOC = M15 | DRIVE = 4 | IOSTANDARD = LVCMOS33;
+
